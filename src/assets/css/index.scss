@@ -1,0 +1,57 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+html,
+body .app {
+  height: 100%;
+  color: #333333;
+  box-sizing: border-box;
+  font-family: SFProText-Regular, SFProText, Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $background-color;
+}
+
+.app-container {
+  // padding-bottom: 50px;
+}
+
+
+.scale {
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  overflow: hidden !important;
+  img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+    // transform-origin: bottom;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+  }
+  img {
+    transition: all .3s ease-in 0s
+  }
+}
+.size-110 {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all 0.3s;
+  background-position: center;
+  overflow: hidden;
+  &:hover {
+    // box-shadow: 0 0 8px 1px #ccc;
+    background-size: 110%;
+  }
+}
+.inner-container{
+  max-width: 1248px;
+}
